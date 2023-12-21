@@ -117,6 +117,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseMiddleware<ExceptionHandler>();
+
 app.UseCors();
 
 app.UseAuthentication();
